@@ -15,7 +15,8 @@ int *array;
 
 int main() {
     while (1) {
-        menu();
+        if (menu())
+            return 0;
     }
     return 0;
 }
@@ -64,7 +65,7 @@ int menu() {
             }
             break;
         case 7:
-            return 0;
+            return 1;
         default:
             break;
     }
